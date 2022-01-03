@@ -1,0 +1,15 @@
+.program_box {
+    padding: 5px;
+    border: 2px solid #eee;
+    border-left: 5px solid #008080;
+    overflow: auto;
+}
+
+.output_box{background-color:#292928;color:#c9c9c3;padding:5px;border:1px solid #008080;overflow:auto;}
+.blue{
+color:blue;
+}
+.yellow{
+color: rgb(42, 224, 18);
+}
+ 

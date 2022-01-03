@@ -1,0 +1,620 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Python By Excellence Technology</title>
+
+  </head>
+  <body>
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-info">Python Operator</h2>
+                <p>Operators in Python works same as Mathematics, that is operators such as +, -, * etc. used to perform operations. Now these are the 
+                    two questions arises in our mind:</p>
+                    <ol>
+                        <li>What operations are going to perform ?</li>
+                        <li>Where the operations are performed ?</li>
+                    </ol>
+                    <p>The answer of these two questions are:</p>
+                    <ol>
+                        <li>It is decided by the operator used.</li>
+                        <li>On variables and values.</li>
+                    </ol>
+                    <p>For example, the following program shows the addition operation is performed (using +) on two variables, and the subtraction operation 
+                    is performed (using -) on two values:</p>
+                    <div class="program_box">
+                    <pre>a = 20
+b = 10
+c = a + b
+<span class="blue">print</span>(c)
+                    
+res = 100 - 50
+<span class="blue">print</span>(res)</pre>
+                    </div>
+                    <p>This program produces the output like shown in the snapshot given below:</p>
+                    <div class="img_box">
+                    <img data-src="/python/images/python-operators.JPG" class="lazyload" alt="python operators">
+                    </div>
+                    <p>As you can see, the addition operation is performed on <b>a</b> and <b>b</b>, and whatever the result comes out, gets 
+                    initialized to <b>c</b> variable. And in second case, the subtraction operation is performed directly on two values, that are 
+                    <b>100</b> and <b>50</b>, and again whatever the result value comes out, gets initialized to <b>res</b> variable.</p>
+                    <p><b>Note - </b>For Operator Precedence and
+                    operator Module, refer to its separate tutorial.</p>
+                    
+                    <h2 class="text-info">Types of Operators</h2>
+                    <p>Operators that are used in Python, divided into 7 categories as listed here:</p>
+                    <ol>
+                        <li>Arithmetic Operators</li>
+                        <li>Assignment Operators</li>
+                        <li>Comparison Operators</li>
+                        <li>Logical Operators</li>
+                        <li>Bitwise Operators
+                        <li>Identity Operators</li>
+                        <li>Membership Operators</li>
+                    </ol>
+                    <p>Now let's discuss about all these operators in brief with well designed example programs for each category.</p>
+                    
+                    <h2 class="text-info">Arithmetic Operators</h2>
+                    <p>To perform arithmetical operations in Python program, we have arithmetic operators. The table given below listed all the arithmetic operators 
+                    available along with syntax to use, and example. The example is given with variable's value as, <b>a = 5</b> and <b>b = 3</b>:</p>
+                    <div class="table_box">
+                    <table class="table">
+                    <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Syntax</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>+</td>
+                        <td>Addition</td>
+                        <td>c = a + b</td>
+                        <td>c = 8</td>
+                    </tr>
+                        <td>-</td>
+                        <td>Subtraction</td>
+                        <td>c = a - b</td>
+                        <td>c = 2</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Multiplication</td>
+                        <td>c = a * b</td>
+                        <td>c = 15</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>Division</td>
+                        <td>c = a / b</td>
+                        <td>c = 1.6666666666666667</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>Modulus</td>
+                        <td>c = a % b</td>
+                        <td>c = 2</td>
+                    </tr>
+                    <tr>
+                        <td>**</td>
+                        <td>Exponentiation</td>
+                        <td>c = a ** b</td>
+                        <td>c = 125</td>
+                    </tr>
+                    <tr>
+                        <td>//</td>
+                        <td>Floor Division</td>
+                        <td>c = a // b</td>
+                        <td>c = 1</td>
+                    </tr>
+                    </table>
+                    </div>
+                    <p><b>Important</b> - Difference between <b>/</b> (Division) and <b>//</b> (Floor Division) operator is, division operator divides and 
+                    return the exact division result value. Whereas the floor division operator divides and then takes the floor value 
+                    of result value. For example, <b>5/3</b> gives <b>1.6666666666666667</b>, whereas <b>5//3</b> gives <b>1</b>. Here the <u>floor value 
+                    indicates to an integer value (a whole number) which is less than or equal to the original result</u>.</p>
+                    <p><b>Note</b> - The <b>**</b> operator when applies to a variable or a value, for example <b>a ** b</b>, it gets treated 
+                    as <b>a<sup>b</sup></b>. Therefore, <b>5 ** 3</b> gets treated as <b>5<sup>3</sup></b>, that gives <b>125</b> as its result.</p>
+                    <p>The program given below uses all the arithmetic operators. This program is created to clear all your remaining doubt (if any):</p>
+                    <div class="program_box">
+                    <pre>a = 5
+b = 3
+c = a + b
+<span class="blue">print</span>(a, <span class="yellow">"+"</span>, b, <span class="yellow">"="</span>, c)
+c = a - b
+<span class="blue">print</span>(a, <span class="yellow">"-"</span>, b, <span class="yellow">"="</span>, c)
+c = a * b
+<span class="blue">print</span>(a, <span class="yellow">"*"</span>, b, <span class="yellow">"="</span>, c)
+c = a / b
+<span class="blue">print</span>(a, <span class="yellow">"/"</span>, b, <span class="yellow">"="</span>, c)
+c = a % b
+<span class="blue">print</span>(a, <span class="yellow">"%"</span>, b, <span class="yellow">"="</span>, c)
+c = a ** b
+<span class="blue">print</span>(a, <span class="yellow">"*"</span>, b, <span class="yellow">"="</span>, c)
+c = a // b
+<span class="blue">print</span>(a, <span class="yellow">"//"</span>, b, <span class="yellow">"="</span>, c)</pre>
+                    </div>
+                    <p>The snapshot given below shows sample output produced by this program:</p>
+                    <div class="img_box">
+                    <img data-src="/python/images/python-direct-calculation.JPG" class="lazyload" alt="python direct calculation">
+                    </div>
+                    
+                    <h2 class="text-info">Assignment Operators</h2>
+                    <p>To assign (set) or re-assign the new value to a variable in Python programming, we have another category of operator named 
+                    assignment operator. The table given below listed all those operators used for assigning purposes along with its syntax and example.</p>
+                    <div class="table_box">
+                    <table class="table">
+                    <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Syntax</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>=</td>
+                        <td>Simple Assign</td>
+                        <td>b = a</td>
+                        <td>If a = 5<br/>
+                        Then, b = 5</td>
+                    </tr>
+                    <tr>
+                        <td>+=</td>
+                        <td>Add then Assign</td>
+                        <td>b += a</td>
+                        <td>If a = 5, b = 0<br/>
+                        Then, b = 5</td>
+                    </tr>
+                    <tr>
+                        <td>-=</td>
+                        <td>Subtract then Assign</td>
+                        <td>b -= a</td>
+                        <td>If a = 5, b = 12<br/>
+                        Then, b = 7</td>
+                    </tr>
+                    <tr>
+                        <td>*=</td>
+                        <td>Multiply then Assign</td>
+                        <td>b *= a</td>
+                        <td>If a = 5, b = 2<br/>
+                        Then, b = 10</td>
+                    </tr>
+                    <tr>
+                        <td>/=</td>
+                        <td>Divide then Assign</td>
+                        <td>b /= a</td>
+                        <td>If a = 5, b = 14<br/>
+                        Then, b = 2.8</td>
+                    </tr>
+                    <tr>
+                        <td>%=</td>
+                        <td>Modulo then Assign</td>
+                        <td>b %= a</td>
+                        <td>If a = 5, b = 27<br/>
+                        Then, b = 2</td>
+                    </tr>
+                    <tr>
+                        <td>//=</td>
+                        <td>Floor Divide then Assign</td>
+                        <td>b //= a</td>
+                        <td>If a = 5, b = 14<br/>
+                        Then, b = 2</td>
+                    </tr>
+                    <tr>
+                        <td>**=</td>
+                        <td>Exponent then Assign</td>
+                        <td>b **= a</td>
+                        <td>If a = 5, b = 2<br/>
+                        Then, b = 32</td>
+                    </tr>
+                    <tr>
+                        <td>&amp;=</td>
+                        <td>Bitwise AND then Assign</td>
+                        <td>b &= a</td>
+                        <td>If a = 10, b = 4<br/>
+                        Then, b = 0</td>
+                    </tr>
+                    <tr>
+                        <td>|=</td>
+                        <td>Bitwise OR then Assign</td>
+                        <td>b |= a</td>
+                        <td>If a = 10, b = 4<br/>
+                        Then, b = 14</td>
+                    </tr>
+                    <tr>
+                        <td>&Hat;=</td>
+                        <td>Bitwise XOR then Assign</td>
+                        <td>b &Hat;= a</td>
+                        <td>If a = 10, b = 4<br/>
+                        Then, b = 14</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;&gt;=</td>
+                        <td>Bitwise Right Shift then Assign</td>
+                        <td>b &gt;&gt;= a</td>
+                        <td>If a = 1, b = 10<br/>
+                        Then, b = 5</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;&lt;=</td>
+                        <td>Bitwise Left Shift then Assign</td>
+                        <td>b &lt;&lt;= a</td>
+                        <td>If a = 1, b = 10<br/>
+                        Then, b = 20</td>
+                    </tr>
+                    </table>
+                    </div>
+                    <p>The program given below implements all the above operators. This program is created to show you the things in better way to understand 
+                    about assignment operators:</p>
+                    <div class="program_box">
+                    <pre>a = 5
+b = a
+<span class="blue">print</span>(<span class="yellow">"Simple Assign Result:"</span>, b)
+                    
+a = 5
+b = 0
+b += a
+<span class="blue">print</span>(<span class="yellow">"Add then Assign Result:"</span>, b)
+                    
+a = 5
+b = 12
+b -= a
+<span class="blue">print</span>(<span class="yellow">"Subtract then Assign Result:"</span>, b)
+a = 5
+b = 2
+b *= a
+<span class="blue">print</span>(<span class="yellow">"Multiply then Assign Result:"</span>, b)
+                    
+a = 5
+b = 14
+b /= a
+<span class="blue">print</span>(<span class="yellow">"Divide then Assign Result:"</span>, b)
+                    
+a = 5
+b = 27
+b %= a
+<span class="blue">print</span>(<span class="yellow">"Modulo then Assign Result:"</span>, b)
+                    
+a = 5
+b = 14
+b //= a
+<span class="blue">print</span>(<span class="yellow">"Floor Divide then Assign Result:"</span>, b)
+                    
+a = 5
+b = 2
+b **= a
+<span class="blue">print</span>(<span class="yellow">"Exponent then Assign Result:"</span>, b)
+                    
+a = 10
+b = 4
+b &amp;= a
+<span class="blue">print</span>(<span class="yellow">"Bitwise AND then Assign Result:"</span>, b)
+                    
+a = 10
+b = 4
+b |= a
+<span class="blue">print</span>(<span class="yellow">"Bitwise OR then Assign Result:"</span>, b)
+                    
+a = 10
+b = 4
+b &Hat;= a
+<span class="blue">print</span>(<span class="yellow">"Bitwise XOR then Assign Result:"</span>, b)
+                    
+a = 1
+b = 10
+b &gt;&gt;= a
+<span class="blue">print</span>(<span class="yellow">"Bitwise Right Shift then Assign Result:"</span>, b)
+                    
+a = 1
+b = 10
+b &lt;&lt;= a
+ <span class="blue">print</span>(<span class="yellow">"Bitwise Left Shift then Assign Result:"</span>, b)</pre>
+                    </div>
+                    <p>Here is the output produced by this program of assignment operators in Python:</p>
+                    <div class="img_box">
+                    <img data-src="/python/images/operator-arithmetic-example-python.JPG" class="lazyload" alt="operator arithmetic example python">
+                    </div>
+                    <p>In assignment operator, the expression:</p>
+                    <div class="program_box">
+                    <pre>b += a</pre>
+                    </div>
+                    <p>is basically the short version of, or same as:</p>
+                    <div class="program_box">
+                    <pre>b = b + a</pre>
+                    </div>
+                    
+                    <h2 class="text-info">Comparison Operators</h2>
+                    <p>To compare two variable or directly values in Python programming, we've comparison operators. These operators are used to compare 
+                    any two entity. The table given below shows all the comparison operators along with syntax to use, and its example. The example taken 
+                    with two variables namely <b>a</b> and <b>b</b>. The value of these two variables are <b>a = 12</b> and <b>b = 7</b>:</p>
+                    <div class="">
+                    <table class="table">
+                    <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Syntax</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>==</td>
+                        <td>Equal</td>
+                        <td>a == b</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>!=</td>
+                        <td>Not equal</td>
+                        <td>a != b</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>Greater than</td>
+                        <td>a &gt; b</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>Less than</td>
+                        <td>a &lt; b</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;=</td>
+                        <td>Greater than or equal to</td>
+                        <td>a &gt;= b</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;=</td>
+                        <td>Less than or equal to</td>
+                        <td>a &lt;= b</td>
+                        <td>False</td>
+                    </tr>
+                    </table>
+                    </div>
+                    <p>The program given below uses all these comparison operators. Since the comparison operators are used to compare two values. Therefore, 
+                    on printing the comparison result, we'll only get the output in the form of True or False. For example, the statement, 
+                    <b>a &lt; b</b> returns True, if the value of a is less than b, otherwise False gets returned. Let's have a look at the example given 
+                    below:</p>
+                    <div class="program_box">
+                    <pre>a = 12
+b = 7
+<span class="blue">print</span>(<span class="yellow">"</span>\n<span class="yellow">---------"</span>, a, <span class="yellow">"=="</span>, b, <span class="yellow">"?--------"</span>)
+<span class="blue">print</span>(a == b)
+<span class="blue">print</span>(<span class="yellow">"</span>\n<span class="yellow">---------"</span>, a, <span class="yellow">"!="</span>, b, <span class="yellow">"?--------"</span>)
+<span class="blue">print</span>(a != b)
+<span class="blue">print</span>(<span class="yellow">"</span>\n<span class="yellow">---------"</span>, a, <span class="yellow">"&gt;"</span>, b, <span class="yellow">"?--------"</span>)
+<span class="blue">print</span>(a &gt; b)
+<span class="blue">print</span>(<span class="yellow">"</span>\n<span class="yellow">---------"</span>, a, <span class="yellow">"&lt;"</span>, b, <span class="yellow">"?--------"</span>)
+<span class="blue">print</span>(a &lt; b)
+<span class="blue">print</span>(<span class="yellow">"</span>\n<span class="yellow">---------"</span>, a, <span class="yellow">"&gt;="</span>, b, <span class="yellow">"?--------"</span>)
+<span class="blue">print</span>(a &gt;= b)
+<span class="blue">print</span>(<span class="yellow">"</span>\n<span class="yellow">---------"</span>, a, <span class="yellow">"&lt;="</span>, b, <span class="yellow">"?--------"</span>)
+<span class="blue">print</span>(a &lt;= b)</pre>
+                    </div>
+                    <p>Here is the output produced:</p>
+                    <div class="img_box">
+                    <img data-src="/python/images/python-math-example.JPG" class="lazyload" alt="python math example">
+                    </div>
+                    
+                    <h2 class="text-info">Logical Operators</h2>
+                    <p>To connect two or more expressions and evaluate its logical output, then we've another operator category named logical operator.
+                    The table given below shows all the logical operators along with its syntax and output. The initial value of three variables namely 
+                    a, b, and c are <b>a=12</b>, <b>b=7</b>, and <b>c=9</b>:</p>
+                    <div >
+                    <table class="table">
+                    <tr>
+                        <th>Operator</th>
+                        <th>Syntax</th>
+                        <th>Returns</th>
+                    </tr>
+                    <tr>
+                        <td>and</td>
+                        <td>a &gt; b and a &lt; c</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>or</td>
+                        <td>a &gt; b or a &lt; c</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>not</td>
+                        <td>not(a &gt; b)</td>
+                        <td>False</td>
+                    </tr>
+                    </table>
+                    </div>
+                    <p>Now the example given below uses all these three logical operators:</p>
+                    <div class="program_box">
+                    <pre>a = 12
+b = 7
+c = 9
+<span class="blue">print</span>(a &gt; b <span class="red">and</span> a &lt; c)
+<span class="blue">print</span>(a &gt; b <span class="red">or</span> a &lt; c)
+<span class="blue">print</span>(<span class="red">not</span>(a &gt; b))</pre>
+                    </div>
+                    <p>And here is the output produced:</p>
+                    <div class="img_box">
+                    <img data-src="/python/images/python-logical-operators.JPG" class="lazyload" alt="python logical operators">
+                    </div>
+                    
+                    <h2 class="text-info">Bitwise Operators</h2>
+                    <p>This section includes all the Bitwise operators that can be used in Python language. To learn how all these Bitwise operators 
+                    perform operations, refer Bitwise Operators with Example to learn 
+                    everything about Bitwise operators in very brief. For now, the table given below shows all Bitwise operators along with syntax 
+                    and output. The example taken with two variables namely a and b, whose values are supposed to be <b>a = 10</b> and <b>b=3</b>:</p>
+                    <div class="">
+                    <table class="table">
+                    <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Syntax</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>&amp;</td>
+                        <td>Bitwise AND</td>
+                        <td>a &amp; b</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>|</td>
+                        <td>Bitwise OR</td>
+                        <td>a | b</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>&Hat;</td>
+                        <td>Bitwise XOR</td>
+                        <td>a &Hat; b</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>&tilde;</td>
+                        <td>Bitwise NOT</td>
+                        <td>&tilde;a</td>
+                        <td>-11</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;&lt;</td>
+                        <td>Bitwise Left Shift</td>
+                        <td>a &lt;&lt; b</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;&gt;</td>
+                        <td>Bitwise Right Shift</td>
+                        <td>a &gt;&gt; b</td>
+                        <td>80</td>
+                    </tr>
+                    </table>
+                    </div>
+                    <p>The example given below uses all these Bitwise operators:</p>
+                    <div class="program_box">
+                    <pre>a = 10
+b = 3
+<span class="blue">print</span>(a, <span class="yellow">"&amp;"</span>, b, <span class="yellow">"="</span>, a &amp; b)
+<span class="blue">print</span>(a, <span class="yellow">"|"</span>, b, <span class="yellow">"="</span>, a | b)
+<span class="blue">print</span>(a, <span class="yellow">"&Hat;"</span>, b, <span class="yellow">"="</span>, a &Hat; b)
+<span class="blue">print</span>(<span class="yellow">"&tilde;"</span>, a, <span class="yellow">"="</span>, &tilde;a)
+<span class="blue">print</span>(a, <span class="yellow">"&gt;&gt;"</span>, b, <span class="yellow">"="</span>, a &gt;&gt; b)
+<span class="blue">print</span>(a, <span class="yellow">"&lt;&lt;"</span>, b, <span class="yellow">"="</span>, a &lt;&lt; b)</pre>
+                    </div>
+                    <p>The output produced by this program is:</p>
+                    <div class="img_box">
+                    <img data-src="/python/images/python-bitwise-operators.JPG" class="lazyload" alt="python bitwise operators">
+                    </div>
+                    
+                    <h2 class="text-info">Identity Operators</h2>
+                    <p>To determine whether a variable or a value is of certain type or class or not in Python programming, we've another category of 
+                    operators called Identity operator. That is basically used to identify variables or values. The table given below listed identity 
+                    operators that can be used in Python along with syntax and example. The example is taken with a and b variables whose values are 
+                    <b>a=[1, 2, 3]</b>, <b>b=[4, 5]</b>:</p>
+                    <div >
+                    <table class="table">
+                    <tr>
+                        <th>Operator</th>
+                        <th>Syntax</th>
+                        <th>Returns</th>
+                    </tr>
+                    <tr>
+                        <td>is</td>
+                        <td>a is b</td>
+                        <td>False</td>
+                    </tr>
+                    <tr>
+                        <td>is not</td>
+                        <td>a is not b</td>
+                        <td>True</td>
+                    </tr>
+                    </table>
+                    </div>
+                    <p>The example given below implements these two identity operators available in Python:</p>
+                    <div class="program_box">
+                    <pre>a = [1, 2, 3]
+b = [4, 5]
+c = a
+<span class="blue">print</span>(a <span class="red">is</span> b)
+<span class="blue">print</span>(a <span class="red">is</span> c)
+<span class="blue">print</span>(a <span class="red">is not</span> b)
+<span class="blue">print</span>(a <span class="red">is not</span> c)</pre>
+                    </div>
+                    <p>The snapshot given below shows the sample output produced by this Python program:</p>
+                    <div class="img_box">
+                    <img data-src="/python/images/operators-in-python.JPG" class="lazyload" alt="operators in python">
+                    </div>
+                    
+                    <h2 class="text-info">Membership Operators</h2>
+                    <p>This is the last category of operator used in Python. This category named membership operators are basically used to check whether 
+                    a specific value is a member of any specific list, string, tuple or not. The table given below listed membership operators with 
+                    syntax, example, and output. The example taken with a variable named <b>a</b> whose initial value is <b>a = [1, 2, 3]</b>:</p>
+                    <div class="ta">
+                    <table class="table">
+                    <tr>
+                        <th>Operator</th>
+                        <th>Syntax</th>
+                        <th>Example</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>in</td>
+                        <td><i>element</i> in a</td>
+                        <td>2 in a</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>not in</td>
+                        <td><i>element</i> not in a</td>
+                        <td>4 in a</td>
+                        <td>False</td>
+                    </tr>
+                    </table>
+                    </div>
+                    <p>Let's have a look at the example given below to understand about the above two membership operators in better way:</p>
+                    <div class="program_box">
+                    <pre>a = [1, 2, 3]
+<span class="blue">print</span>(2 <span class="red">in</span> a)
+<span class="blue">print</span>(4 <span class="red">in</span> a)
+<span class="blue">print</span>(2 <span class="red">not in</span> a)
+<span class="blue">print</span>(4 <span class="red">not in</span> a)</pre>
+                    </div>
+                    <p>The sample output produced by this program is shown in the snapshot given below:</p>
+                    <div class="img_box">
+                    <img data-src="/python/images/python-membership-operators-example.JPG" class="lazyload" alt="python membership operators example">
+                    </div>
+                    <p>Let's have a look at another example, that shows the famous use of membership operator (<b>in</b> operator) in Python programming:</p>
+                    <div class="program_box">
+                    <pre>a = [<span class="yellow">"python"</span>, <span class="yellow">"operators"</span>, <span class="yellow">"tutorial"</span>]
+<span class="blue">print</span>(<span class="yellow">"Enter an element to check for existence in list: "</span>)
+ elem = <span class="blue">input</span>()
+<span class="red">if</span> elem <span class="red">in</span> a:
+<span class="blue">print</span>(<span class="yellow">"</span>\n<span class="yellow">It is available"</span>)
+<span class="red">else</span>:
+<span class="blue">print</span>(<span class="yellow">"</span>\n<span class="yellow">It is not available"</span>)</pre>
+                    </div>
+                    <p>And here is the sample output produced by this program, after supplying <b>python</b> as input:</p>
+                    <div class="img_box">
+                    <img data-src="/python/images/python-operators-example.JPG" class="lazyload" alt="python operators example">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+    

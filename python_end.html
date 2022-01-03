@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Python end </title>
+    <style>
+        .program_box {
+            padding: 5px;
+            border: 2px solid #eee;
+            border-left: 5px solid #008080;
+            overflow: auto;
+        }
+
+        .output_box{background-color:#292928;color:#c9c9c3;padding:5px;border:1px solid #008080;overflow:auto;}
+  
+  </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-info">Python end (end=) Parameter in print() </h2>
+                <p>This article is created to cover an interesting topic in Python, that is <b>end</b> parameter of
+                    print(). The <b>end</b> (end=) can be seen in many programs of Python. Therefore we must
+                    have to understand about it.</p>
+
+                <p>The <b>end</b> parameter is used to change the default behavior of <b>print()</b> statement in
+                    Python. That is, since <b>print()</b>
+                    automatically inserts a newline after each execution. Therefore, using <b>end</b> this can change.
+                    The <b>end</b> parameter is basically
+                    used to customized or sometime interactive output.</b>
+
+                <h2 class="text-info">Benefits of end Parameter in Python</h2>
+                <p>Of course, we can use <b>end</b> to skip insertion of an automatic newline. But we can also use it to
+                    insert one, two, or multiple
+                    newlines using one single <b>print()</b>. The examples given below, shows the use of <b>end</b> in
+                    every aspect.</p>
+
+                <h2 class="text-info">Python end Parameter Syntax</h2>
+                <p>Since <b>end</b> is an parameter of <b>print()</b> statement/function, therefore there is nothing
+                    unique in its syntax. That is,
+                    the syntax to use <b>end</b> looks like:</p>
+
+                <!--  -->
+
+                <div class="program_box">
+                    <pre><span class="blue">print</span>(end=<span class="yellow">""</span>)</pre>
+                </div>
+                <p>Inside the double quote, you can insert whatever you want, according to your need such as a space, no
+                    space, comma, newline (\n)
+                    etc.</p>
+
+                <h2 class="text-info">Python end Parameter Example</h2>
+                <p>This section includes few examples that helps you, in understanding the topic completely. Let's start
+                    with very basic one, given below.</p>
+
+                <h3 class="text-info">end Parameter with No Space and No Newline</h3>
+                <p>This program uses <b>end</b>, that puts no space, and also no newline.</p>
+                <div class="program_box">
+                    <pre><span class="blue">print</span>(<span class="yellow">"Py"</span>, end=<span class="yellow">""</span>)
+<span class="blue">print</span>(<span class="yellow">"thon"</span>)</pre>
+                </div>
+                <p>The above program produces the output like shown in the snapshot given below:</p>
+                <div class="output_box">
+                    <p>Python</p>
+                </div>
+
+                <h3 class="text-info">end Parameter with a Space and No Newline</h3>
+                <p>The program given below shows how to add a single or multiple spaces with no newline in a Python
+                    program:</p>
+                <div class="program_box">
+                    <pre><span class="blue">print</span>(<span class="yellow">"This is a tutorial on"</span>, end=<span class="yellow">" "</span>)
+<span class="blue">print</span>(<span class="yellow">"</span>\"<span class="yellow">end</span>\"<span class="yellow"> parameter."</span>)</pre>
+                </div>
+                <p>The snapshot given below shows the sample output produced by above program:</p>
+                <div class="output_box">
+                    <p>This is a tutorial "end" parameter.</p>
+                </div>
+
+                <h3 class="text-info">end Parameter with a Comma, a Space, and No Newline</h3>
+                <p>This is the third example program of <b>end</b> parameter. This program shows, how we can add
+                    multiple things using <b>end</b>:</p>
+                <div class="program_box">
+                    <pre><span class="blue">print</span>(<span class="yellow">"Hello"</span>, end=<span class="yellow">", "</span>)
+<span class="blue">print</span>(<span class="yellow">"Programmer"</span>)</pre>
+                </div>
+                <p>This program produces:</p>
+                <div class="output_box">
+                 <p>Hello, Programmer</p>
+                </div>
+                <P><b>Note - </b>Basically, whatever you provide inside the double quote of <b>end=""</b>. You will get
+                    the respective output.</p>
+
+                <h3 class="text-info">end Parameter with One, Two and Multiple Newlines</h3>
+                <p>Since <b>print()</b> statement by default, always inserts/prints a single newline. But using
+                    <b>end</b> as its parameter, we can
+                    change this to print required number of newlines like shown in the program given below:</p>
+                <div class="program_box">
+                    <pre><span class="blue">print</span>(<span class="yellow">"Hey"</span>, end=<span class="yellow">"!</span>\n\n<span class="yellow">"</span>)
+<span class="blue">print</span>(<span class="yellow">"What's Up"</span>, end=<span class="yellow">"</span>\n<span class="yellow">"</span>)
+<span class="blue">print</span>(<span class="yellow">"Great to see you learning Python here."</span>, end=<span class="yellow">"</span>\n\n\n\n<span class="yellow">"</span>)
+<span class="blue">print</span>(<span class="yellow">"Thank You!"</span>)</pre>
+                </div>
+                <p>Now the output produced by this Python program is exactly same as shown in the snapshot given below:
+                </p>
+                <div class="output_box">
+                    <p>Hey!</p>
+                    <p></p>
+                    <p>What'Up </p>
+                    <p>Great to see you learning python here.</p>
+                    <pre>
+
+                    </pre>
+                    <p>Thanku You!</p>
+                </div>
+                <p>You can also put some message/content of <b>print()</b> inside its <b>end</b> parameter like shown in
+                    the program given below:</p>
+                <div class="program_box">
+                    <pre><span class="blue">print</span>(<span class="yellow">"H"</span>, end=<span class="yellow">"ey!</span>\n\n<span class="yellow">"</span>)
+<span class="blue">print</span>(<span class="yellow">"What"</span>, end=<span class="yellow">"'s Up</span>\n<span class="yellow">"</span>)
+ <span class="blue">print</span>(<span class="yellow">"Great to see you "</span>, end=<span class="yellow">"learning Python here.</span>\n\n\n\n<span class="yellow">"</span>)
+<span class="blue">print</span>(<span class="yellow">"Thank"</span>, end=<span class="yellow">" You!</span>\n<span class="yellow">"</span>)</pre>
+                </div>
+                <p>This program produces the same output as of previous program's output.</p>
+
+                <h3 class="text-info">putting everything of print() inside end Parameter</h3>
+                <p>You can also put all the things inside the <b>end</b> like shown in the program given below:</p>
+                <div class="program_box">
+                    <pre><span class="blue">print</span>(end=<span class="yellow">"Hey!</span>\n\n<span class="yellow">"</span>)
+<span class="blue">print</span>(end=<span class="yellow">"What's Up</span>\n<span class="yellow">"</span>)
+<span class="blue">print</span>(end=<span class="yellow">"Great to see you learning Python here.</span>\n\n\n\n<span class="yellow">"</span>)
+<span class="blue">print</span>(end=<span class="yellow">"Thank You!</span>\n<span class="yellow">"</span>)</pre>
+                </div>
+                <p>Again this program also produces the same output as of second previous program.</p>
+                <p><b>Note - </b>Basically the <b>end</b> parameter of <b>print()</b> forces it, not to automatically
+                    insert a newline.</p>
+
+                <h3 class="text-info">end Parameter Provides Interactive Output for User Input</h3>
+                <p>This type of program, where the <b>end</b> parameter is used when asking to enter some inputs from
+                    user, may be seen a lot of times,
+                    to receive the input on the same line, where the asking message is written like shown in the program
+                    given below:</p>
+                <div class="program_box">
+                    <pre><span class="blue">print</span>(<span class="yellow">"Enter anything: "</span>, end=<span class="yellow">""</span>)
+val = <span class="blue">input</span>()
+<span class="blue">print</span>(<span class="yellow">"You've entered:"</span>, val)</pre>
+                </div>
+                <p>Here is its sample run with user input <b>Excellence Technology</b>:</p>
+                <div class="output_box">
+                   <p>Enter anything: mohan</p>
+                   <p>You've enter : mohan</p>
+                </div>
+
+                <h3 class="text-info">Use end Parameter to Print List Items in Single Line</h3>
+                <p>This is the task, where we almost want to use <b>end</b> every time. Because when we've a <a
+                        list
+                    of large number of elements, then it takes large number of lines, that looks weird sometime.
+                    Therefore using <b>end</b>, we can modify
+                    it like shown in the program given below:</p>
+                <div class="program_box">
+                    <pre>nums = [1, 2, 3, 4, 5]
+<span class="red">for</span> n <span class="red">in</span> nums:
+    <span class="blue">print</span>(n, end=<span class="yellow">" "</span>)</pre>
+                </div>
+                <p>This program produces:</p>
+                <div class="output_box">
+                    <p>1 2 3 4 5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

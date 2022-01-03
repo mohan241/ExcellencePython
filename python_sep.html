@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Python sep function</title>
+
+  </head>
+  <body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <p>The <b>sep</b> parameter in <a href="/python/python-print-statement.htm">print()</a> is used to separate multiple parameters using the 
+                    value assigned to it. For example, the following Python code:</p>
+                    <div class="program_box">
+                    <pre><span class="blue">print</span>(<span class="yellow">"s"</span>, <span class="yellow">"e"</span>, <span class="yellow">"p"</span>)</pre>
+                    </div>
+                    <p>produces following output:</p>
+                    <div class="output_box">
+                   <pre>s e p</pre>
+                    </div>
+                    <p>As you can see from above output, there is a single space inserted automatically between each parameter (that are "s", "e", and "p").
+                    But using <b>sep</b> parameter, we can remove the default behavior of <b>print()</b> to insert an automatic space between each of its 
+                    parameters. Here is the modified version of previous program:</p>
+                    <div class="program_box">
+                    <pre><span class="blue">print</span>(<span class="yellow">"s"</span>, <span class="yellow">"e"</span>, <span class="yellow">"p"</span>, sep=<span class="yellow">""</span>)</pre>
+                    </div>
+                    <p>Now the output produced by this program will be:</p>
+                    <div class="img_box">
+                        <div class="output_box">
+                            <pre> sep</pre>
+                             </div>
+                    </div>
+                    <p><b>Important - </b>The <b>sep=</b> parameter must be placed as the last parameter of <b>print()</b>.</p>
+                    
+                    <h2 class="text-info">Use of sep Parameter</h2>
+                    <p>The use of <b>sep</b> parameter is not limited to only remove automatically inserted spaces between all parameters of <b>print()</b>.
+                    But it can also be used to insert any required character or combination of characters between all parameters like shown in the program 
+                    given below:</p>
+                    <div class="program_box">
+                    <pre><span class="blue">print</span>(<span class="yellow">"My Computer"</span>, <span class="yellow">"C Drive"</span>, <span class="yellow">"Program Files"</span>, sep=<span class="yellow">" -&gt; "</span>)</pre>
+                    </div>
+                    <p>This program produces the output as shown in the snapshot given below:</p>
+                    <div class="img_box">
+                        <div class="output_box">
+                            <pre>My Computer -> C drive -> Program Files</pre>
+                             </div>
+                    </div>
+                    
+                    <h3 class="text-info">Use of Escape Sequence using sep Parameter</h3>
+                    <p>You can also use escape sequence characters using <b>sep</b> parameter in print(). To illustrate it, first let's take an example without 
+                    assigning escape sequence to <b>sep</b>. Here is the program:</p>
+                    <div class="program_box">
+                    <pre><span class="blue">print</span>(<span class="yellow">"s "</span>, <span class="yellow">"e "</span>, <span class="yellow">"p"</span>, sep=<span class="yellow">""</span>)</pre>
+                    </div>
+                    <p>The above program produces:</p>
+                    <div class="img_box">
+                        <div class="output_box">
+                            <pre>s e p</pre>
+                             </div>
+                    </div>
+                    <p>Now let's create the same program with an escape sequence character say <b>\b</b> (backslash character) assigned to <b>sep</b>, 
+                    created after modifying the above program:</p>
+                    <div class="program_box">
+                    <pre><span class="blue">print</span>(<span class="yellow">"s "</span>, <span class="yellow">"e "</span>, <span class="yellow">"p"</span>, sep=<span class="yellow">"</span>\b<span class="yellow">"</span>)</pre>
+                    </div>
+                    <p>This time, the program produces following output:</p>
+                    <div class="img_box">
+                        <div class="output_box">
+                            <pre> sep</pre>
+                             </div>
+                    </div>
+                    <p><b>Note - </b>These are some demo programs showing you the use of <b>sep</b>. Or how this parameter plays an important role sometime 
+                    when you need this type of outputs.</p>
+                    <p>You can also format the date or anything you need using <b>sep</b> parameter in required way like shown in the demo program given 
+                    below:</p>
+                    <div class="program_box">
+                    <pre><span class="blue">print</span>(<span class="yellow">"01"</span>, <span class="yellow">"09"</span>, <span class="yellow">"2021"</span>, sep=<span class="yellow">"-"</span>)</pre>
+                    </div>
+                    <p>This program produces following output:</p>
+                    <div class="output_box">
+                    <pre>01-09-2021</pre>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

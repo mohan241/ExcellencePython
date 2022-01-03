@@ -1,0 +1,116 @@
+              <!doctype html>
+              <html lang="en">
+                <head>
+                  <!-- Required meta tags -->
+                  <meta charset="utf-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <!-- Bootstrap CSS -->
+                  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+              
+                  <title>Python comment</title>
+                  <style>
+                    .program_box {
+                        padding: 5px;
+                        border: 2px solid #eee;
+                        border-left: 5px solid #008080;
+                        overflow: auto;
+                    }
+            
+                    .output_box{background-color:#292928;color:#c9c9c3;padding:5px;border:1px solid #008080;overflow:auto;}
+              
+              </style>
+                </head>
+                <body>
+                  <div class="container mt-4 mb-4">
+                      <div class="row">
+                          <div class="col">
+                            <p>In general, writing comment means writing some text that defines your feeling or opinion or whatever you say about any particular thing.
+                                Similarly, comment in a Python program is used to provide description of a code, statement, or 
+                                whole program.</p>
+                                <p><b>Note - </b>Comments in Python are human-readable or programmer-readable. That is, comment can't be 
+                                read or interpreted by the compiler or interpreter.</p>
+                                
+                                <h3 class="text-info">What is a Comment in Python ?</h3>
+                                <p>So we can say, a comment is basically a human-readable explanation or annotation in the Python program. The explanation may be given of:</p>
+                                <ul>
+                                    <li>any particular statement</li>
+                                    <li>any block of code</li>
+                                    <li>any piece of code</li>
+                                    <li>sometime the whole program</li>
+                                    <li>or whatever the programmer need to explanation the thing in the program</li>
+                                </ul>
+                                <p><b>Note - </b>Comment can also be used to comment out any code or block of code to skip its execution by the compiler. Therefore, a
+                                comment can also be used for practice or debug.</p>
+                               
+                                
+                                <h3 class="text-info">Why to Use Comment in Python ?</h3>
+                                <p>Most of the time, comment in Python is used to make source code more easier for other programmer to understand, or even the creator 
+                                of the program too to understand, while reading the code now or later.</p>
+                                <p>Another use of comment in a Python program is, if you found that a block of code in your program is not executing or performing its 
+                                work in correct way. Then instead of deleting that block of code, you can comment it out, and create another block of code. May be 
+                                while creating another new block of code, the error gets catch up, so that, just un-comment the previous block of code, and modify it.
+                                That's it.</p>
+                                <p>Comment also helps in reviewing the Python code later. So, this article tells you all about the use of comment in Python programming 
+                                along with example program.</p>
+                                
+                                <h2 class="text-info">Types of Comment in Python</h2>
+                                <p>Python programming language provides two types of comment to use in the source code of the program, that are:</p>
+                                <ol>
+                                    <li>Single-line comment</li>
+                                    <li>Multi-line comment</li>
+                                </ol>
+                                
+                                <h2 class="text-info">Single-line Comment in Python</h2>
+                                <p>Single-line comment in Python is a comment that is written after <b>hash</b> symbol (<b>#</b>). That is, all characters after hash (#) 
+                                sign referred as comment (single line comment), up to the physical line end. For example:</p>
+                                <div class="program_box">
+                                <pre><span class="grey"># I'm a single-line comment of Python</span>
+                                
+<span class="blue">print</span>(<span class="yellow">"Hey!</span>\n<span class="yellow">How are you?"</span>)
+                                
+<span class="grey"># I'm also a single-line comment of Python</span></pre>
+                                </div>
+                                <p>This program produces exactly same output as shown in the snapshot given below:</p>
+                                <div class="output_box">
+                               <h5>Hey!</h5>
+                               <h5>How are you?</h5>
+                                </div>
+                            
+                                <h2 class="text-info my-4">Multi-line Comment in Python</h2>
+<p>Multi-line comment is a comment that is written or expanded in more than one line or multiple lines. In Python, for multi-line comment,
+we use <b>&quot;&quot;&quot;</b> (triple quotes) or <b>&apos;&apos;&apos;</b> (triple apostrophe). For example:</p>
+<div class="program_box">
+<pre><span class="grey">''' This is a
+    multi-line comment
+    in Python
+'''</span>
+
+<span class="blue">print</span>(<span class="yellow">"Hey</span>\n<span class="yellow">How're You?"</span>)
+
+<span class="grey">""" This is also a
+    multi-line comment
+    in Python
+"""</span></pre>
+</div>
+<p>If you run the above Python code, then you will see the following output on your output screen.</p>
+<div class="output_box">
+    <h5>Hey!</h5>
+    <h5>How are you?</h5>
+     </div>
+
+                          </div>
+                      </div>
+                  </div>
+              
+                  <!-- Optional JavaScript; choose one of the two! -->
+              
+                  <!-- Option 1: Bootstrap Bundle with Popper -->
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+              
+                  <!-- Option 2: Separate Popper and Bootstrap JS -->
+                  <!--
+                  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+                  -->
+                </body>
+              </html>
